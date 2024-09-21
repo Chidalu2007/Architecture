@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ nav {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px ;
+    position:fixed;
+    z-index: 1000;
+    box-shadow: rgba(79, 75, 75, 0.175) 2px 5px ;
+}
+
+ nav ul {
+    display: none;
+    visibility: hidden;
+}
+
+ nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+ nav ul {
+    list-style-type: none;
+}
+
+ nav .nav-bar a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 4px;
+}
+nav  ul li a {
+    letter-spacing: 4px;
+    
+}
+nav ul li a:hover{
+    background-color: rgba(81, 80, 80, 0.813) ;
+}
+
+ nav .nav-bar:hover {
+    background-color: rgba(81, 80, 80, 0.813);
+}
+.img-text{
+    position: relative;
+}
+.img-text img {
+    width: 100%;
+    height: auto;
+}
+
+ .img-text h1 {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: rgba(37, 37, 37, 0.813);
+    padding: 15px;
+    letter-spacing: 5px;
+}
+
+span {
+    display: none;
+}
+
+.section1 #Projects h3 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+    padding-bottom: 10px;
+}
+
+.section1 .images img {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.section1 .images .caption {
+    color: white;
+    background-color: black;
+    height: auto;
+    width: fit-content;
+    position: relative;
+    top: 40px;
+    padding: 8px 16px;
+    text-align: center;
+}
+
+article {
+    /* padding: 20px ; */
+    margin: 30px;
+    margin-bottom: 0;
+}
+
+.section2 {
+    margin-top: 100px;
+
+}
+
+.section2 #About {
+    margin-bottom: 50px;
+    border-bottom: 1px solid black;
+
+}
+.section2 #About h3{
+    padding: 10px;
+}
+
+.section2 .about-paragraph {
+    margin-bottom: 50px;
+}
+
+.gallery img {
+    height: auto;
+    width: 100%;
+}
+
+.section2 .gallery .info .name {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section2 .gallery .info .profession {
+    padding-bottom: 20px;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.section2 .gallery .info .paragraph {
+    padding-bottom: 20px;
+}
+.section2 .gallery .info .button{
+    width:100%;
+    height: 40px;
+    margin-bottom: 100px;
+
+}
+.section3 #Contact h2{
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+.section3 .Contact-text p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.section3 form .input input{
+    padding: 10px;
+    width: 100%;
+
+}
+.section3 form .input{
+    padding-bottom: 20px;
+}
+.section3 form .s-button .send-button{
+    color:white;
+    background-color:black;
+    padding: 10px;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+}
+.section3 .map img{
+    height: auto;
+    width: 100%;
+}
+ footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+
+}
+ footer a{
+    color: white;
+}
+footer a:hover{
+    color: green;
+}
+
+
+
+
+@media (min-width: 768px) {
+     nav ul {
+        display :flex;
+        visibility: visible;
+        gap: 20px;
+    }
+    .section1 .images .imgs{
+        display: flex;
+        padding-top: 0;
+    
+    } 
+    
+    .section1 .images .imgs-4{
+        display: flex;
+        margin-top: 0;
+        padding-top: 0;
+    
+    }
+    
+    .section2 .gallery{
+        display: flex;
+        
+        
+    }
+    .section1 .images img {
+        width: 100%;
+        padding: 0 8px;
+    
+    }
+    .section1 .images .caption{
+        left: 8px;
+    }
+    .section2 .gallery .info {
+        padding: 0 8px;
+    }
+    nav ul {
+        gap: 32px;
+    }
+    span {
+        display:none;
+    }
+}
